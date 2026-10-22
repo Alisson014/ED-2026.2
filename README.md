@@ -2,7 +2,7 @@
 # Estrutura de Dados 2026.2
 
 > **O seguinte repositório contem meu material de estudo da disciplina**   
-> Como o intuito desta pasta de arquivos não era tornar isso um repositório público, acabei não fazendo as anotações em txt.
+> Como o intuito desta pasta de arquivos não era tornar isso um repositório público, acabei fazendo as anotações em txt.
 
 Aconselho clonar o repositório e executar / ver os códigos pelo vscode.
 
