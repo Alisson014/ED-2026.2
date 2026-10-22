@@ -40,9 +40,5 @@ int main(void) {
 
     printf("Palavra invertida: %s\n", word);
 
-    scanf("%s", word);
-    puts(word);
-
-
     return 0;
 }
