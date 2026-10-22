@@ -1,0 +1,17 @@
+
+>> Estruturas de decisão simples:
+
+# Comando if: se a condição é verdadeira, o bloco é executado, senão, é ignorado.
+  * Sintaxe: if (<condicao>) { <bloco_de_comandos> }
+
+# Operadores relacionais:
+  * Maior que:          >
+  * Maior ou igual:     >=
+  * Menor que:          <
+  * Menor ou igual:     <=
+  * Igual:              ==
+  * Diferente:          !=
+
+:::: ! serve para inverter valores lógicos;
+
+

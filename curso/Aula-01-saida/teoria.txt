@@ -1,0 +1,38 @@
+
+>> Saída de dados;
+
+# Saída de dados: comando `printf()`
+  * Sintaxe: printf("texto", <v1>, ..., <vn>);
+  * Uso: pode renderizar 0, 1 ou N variáveis;
+
+# Especificadores de formato:
+  Identificadores que indicam em que local do texto os dados serão inseridos;
+  %d ou %i      Números inteiros em base decimal
+  %X            Números inteiros em base hexadecimal
+  %f            Números em ponto flutuante
+  %e            Números em notação científica
+  %c            Caracteres alfanuméricos
+  %s            Sequências de caracteres alfanuméricos (strings)
+  $f.<num>      Espeficica a quantidade de dígitos após a vírgula
+  %zu           Saída do sizeof() (tipo size_t)
+  %p            ( void *)&var para imprimir o endereço na memória
+
+# Sequências de escape:
+  Textos com funções específicas;
+  \a            Alarme sonoro padrão do sistema
+  \b            Backspace
+  \n            Quebra de linha
+  \t            Tabulação
+  \r            Retorna ao início da linha
+  \0            Caractere nulo (fim de uma string)
+  \v            Tabulação vertical
+  \\            Caractere \
+  \'            Caractere '
+  \"            Caractere "
+  \?            Caractere ?
+  \123          Caractere relacionado ao código 123 3m octal (ASCII)
+  \X12          Caractere relacionado ao 12 em hexadecimal (ASCII)
+  \%            Caractere %
+
+
+:::: C não interpreta acentuação por padrão;

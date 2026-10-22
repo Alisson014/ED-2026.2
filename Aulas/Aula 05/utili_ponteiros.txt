@@ -1,0 +1,33 @@
+
+>> Utilizando ponteiros:
+ Dependendo do tamanho de uma variável, ela pode ocupar mais de um endereço na memória;
+ Ponteiros de vetores também podem ser acessados com a sintexe de colchetes: xPtr[1];
+
+ O tamanho de um ponteiro na memória depende do tamanho dos endereços de memória;
+ Ou seja, o tamanho tem um tamanho fixo em coerência com a arquitetura do computador (32bit, 64bit)
+   - em 32bits: 4bytes;
+   - em 64bits: 8bytes;
+ O tipo da variável na muda o tamanho do ponteiro na memória;
+
+ Os espeços da memória associados aos endereços são de um byte(8 bits);
+
+ :: Independente da variável, o tamanho do ponteiro acompanha o tamanho da arquitetura;
+ :: Isso é importante para questões de memória, um ponteiro ocupa mais espaço que um char, mas não que um long int;
+
+# Operações válidas em ponteiros:
+ * Somar um inteiro a um ponteiro;
+ * Subtrair um inteiro de um ponteiro;
+    -> O resultado é a distância em número de elementos;
+
+ * A subtração entre ponteiros resulta na quantidade de elementos que separa os ponteiros;
+  ::ptrdiff
+    -> Isso é possível porque os endereços são sequências;
+
+ * Comparar ponteiros (igualdade);
+    :: Pode ><>=<= entre ponteiros de vetor;
+
+# Operações que não pode em ponteiros:
+ * Multiplicação entre ponteiros;
+ * Adição entre ponteiros;
+ * Divisão entre ponteiros;
+ * Operações com float;

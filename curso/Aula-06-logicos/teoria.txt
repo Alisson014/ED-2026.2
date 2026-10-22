@@ -1,0 +1,16 @@
+
+>> Operadores Lógicos:
+
+# Conjunção: 
+  * E lógico: verdade se tudo for verdade;
+  * Operador: &&
+
+# Disjunção:
+  * Ou lógico: verdade se pelo menos um for verdade;
+  * Operador: ||;
+
+# Inversão/Negação: 
+  * Não lógico: inverte o valor lógico;
+  * Operador: !;
+
+

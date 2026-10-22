@@ -1,0 +1,33 @@
+
+>> Comando switch case;
+
+Comparação de igualdade em casos;
+Tomar uma única decisão conforme um caso de uma variável;
+
+Como se fosse uma sequência de if's, onde cada
+comparação é uma igualdade de uma variável com um valor.
+
+:: Só é possível comparação de igualdade;
+
+# Sintaxe:
+ switch (<var>) {
+    case <valor1>:
+        <bloco-de-comandos>
+        break;
+
+    case <valor2>:
+        <bloco>
+        break;
+
+    case <valorN>:
+        <bloco>
+        break;
+
+    default:
+        // Executa quando nenhum case anterior é verdadeiro;
+        // Sem o break o compilador segue verificando cada caso;
+        // Pode executar o default inclusivo;
+
+        <bloco>
+        break;
+ }

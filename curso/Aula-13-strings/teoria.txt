@@ -1,0 +1,49 @@
+
+>> Strings:
+Nada mais do que um vetor de caracteres.
+
+Especificador de formato: %s
+
+:::: String não se altera com =
+:::: altera com strcpy
+
+Para que o computador compreenda onde a string termina,
+é necessário utilizar o caractere nulo (\0).
+::: Para uma string de 10 posições, é preciso um tamanho 11.
+::: pois a posição 10 é ocupada pelo caractere \0.
+
+# scanf: uma exceção do scanf
+ * sintaxe: scanf("%s", <str>);     //Essa sintaxe não guarda espaços, apenas a primeira palavra é guardada;
+ * sintaxe aprimorada: scanf("%<tam.-1>[^\n]", <str>)   
+
+[^\n] especifica para o scanf os caracteres que não devem ser lidos
+
+
+# Funções de entrada de string
+>> gets(<str>);
+:: também tem o problema do estouro do limite do vetor
+
+>> fgets(<string>, <tam>, stdin);
+:: o último caractere sempre fica reservado ao '\0';
+:: entrada padrão: stdin.
+
+
+# Funções para saída de strings:
+>> puts(<str>);
+:: imprime a string diretamente na tela
+:: não admite variáveis de outros tipos
+
+>> fflush()
+:: é necessário chamar o fflush(stdin) depois de uma entrada
+
+
+# Funções importantes de string:
+
+:::: biblioteca string.h
+>> strcpy(<destino>, <origem>); // Para atribuir um valor a uma string
+>> strcat(<destino>, <origem>); // concatenação de strings
+>> strlen(<str>);               // Mostra o tamanho da string
+>> strcmp(<str1>, <str2>);      // Retorna 0 se as duas strings são estritamente iguais 
+
+:::: biblioteca locale.h
+>> setlocale(LC_ALL, "Portuguese"); // Permite utilizar acentos no programa

@@ -1,0 +1,11 @@
+
+>> Estruturas de repetição - break e continue;
+
+# break:
+  Interrompe a repetição;
+  Deixa de executar todas as demais iterações seguintes;
+
+# continue:
+  Encerra a iteração atual;
+  Encerra uma e passa para a próxima;
+

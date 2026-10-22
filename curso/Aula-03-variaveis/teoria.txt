@@ -1,0 +1,33 @@
+
+>> Variáveis e atribuição de dados;
+    * Regras de nomenclatura;
+    * Tipos de dados (int, long int, float, double, char, char[]);
+    * Atribuição;
+    * Constantes;
+
+# Sintaxe de uma variável;
+  * Declaração: <tipo> <nome>; (= <valor> é opcional na declaração);
+  * Nomenclatura: regras gerais;
+    - Não pode número na 1ª posição;
+    - Não pode caracteres especiais (exceto  _ );
+    - Não pode espaço;
+    - Não pode utilizar palavras reservadas;
+
+# Tipos de dados em linguagem C (mais usados):
+  Não existem tamanhos "fixos" e predefinidos universalmente na linguagem C.
+  Na verdade, cada tipo possui um tamanho mínimo, mas que pode variar conforme a arquitetura 
+  do processador, de modo a conseguir um tamanho mais eficiente;
+  * Tipo                Nº de bit (B)               Faixa de representação;
+  * char                8 (1B)                      -127 a 127 (de códigos ASCII)
+  * int                 16 ou 32 (4B)               -32.768 a -32.767 ou -2.147.483.648 a 2.147.483.647
+  * long int            64 (8B)                     -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807
+  * float               32 (4B)                     -3.4 x 10^(-38) a 3.4 x 10^(38)
+  * double              64 (8B)                     1.7 x 10^(-308) a 1.7 x 10^(308)
+
+# Atribuição;
+  * Sintaxe: <var> = <valor>;
+
+# Constantes:
+  * Diretiva #define: cria-se um identificador para um dados de qualquer tipo;
+  * Nomemclatura: as mesmas regras para variáveis;
+  * Sintaxe: #define <nome> <valor;

@@ -1,0 +1,18 @@
+
+>> Vetores:
+
+Uma estrutura de dados linear
+Sendo que as posições são controladas por índice
+
+# Sintaxe:
+  <tipo> <nome>[<tamanho>];
+
+A memória utilizada por um vetor é uma área contígua.
+
+As posições são acessadas iniciando-se em 0.
+Dessa forma, o último elemento será sempre tamanho - 1;
+
+:::: Não é possível acessar um vetor inteiro, todo de uma vez.
+:::: A não ser com uma lista de inicialização (preencher o vetor todo de uma vez só)(só na declaração)
+:::: <tipo> <nome>[<tamanho>] = {<v1>, <v2>, ..., <vn>}
+

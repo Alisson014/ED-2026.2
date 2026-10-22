@@ -1,0 +1,16 @@
+
+>> Estruturas de repetição - Comando while;
+
+Uma estrutura que permite que um bloco de comandos 
+seja repetido por um número indeterminado de vezes;
+
+# Atenção:
+  * Inicialização: variáveis precisam ser iniciadas antes do while;
+  * Condição de parada: o bloco executa enquanto ela é verdadeira;
+  * Atualização: as variáveis de controle precisam ser atualizados para evitar laço infinito;
+
+# Sintaxe:
+ while (cond) {
+    <bloco>
+        ...
+ }

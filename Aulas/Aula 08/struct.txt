@@ -1,0 +1,26 @@
+
+>> Struct:
+
+Uma struct pode ter outra struct como campo
+
+# É possível dar apelidos ao struct:
+    struct tipo {
+       ...
+    }
+    typedef struct tipo Tipo;
+
+ :::: Tipo equivalerá agora a (struct tipo)
+
+ Ou 
+    typedef struct tipo {
+        ...
+    } Tipo;
+
+
+# Ponteiros de struct
+ * Acessando valores de um ponteiro de struct
+    struct ponto *pp;
+    (*pp).x = 10
+    pp->x = 10
+    &pp->x // Endereco do campo x
+

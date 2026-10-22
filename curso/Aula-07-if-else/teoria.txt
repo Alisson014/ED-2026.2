@@ -1,0 +1,14 @@
+
+>> Encadeando if else:
+
+Conseguir adotar múltiplos blocos de código para 
+tratar mais de um caso;
+
+# Sintaxe:
+ if (cond) {
+    <bloco_condicao_verdadeira>
+ } else {
+    <bloco_cond_falsa>
+ }
+
+Só existe um else para cada bloco de if;

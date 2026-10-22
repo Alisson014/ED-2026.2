@@ -1,0 +1,31 @@
+
+>> Realizando cálculos em C:
+
+# Operadores aritméticos:
+  É importante não esquecer da precedência entre os operadores.
+  * Soma:           +
+  * Subtração:      -
+  * Multiplicação:  *
+  * Disisão:        /
+  * Resto:          %
+
+
+:::: Divisão entre variáveil inteira resulta em uma divisão inteira (iganora casas decimais);
+:::: Para evitar isso, é preciso utilizar o casting;
+:::: Casting é uma "alteração momentânea" em tempo de execução do tipo de uma variável;
+:::: Fazendo com que o compilador realize a divisão corretamente;
+:::: Ex: 
+:::: int a = 5;
+:::: int b = 2;
+:::: float somaERRADA = a / b           // Resulta em 2.0
+:::: float somaCERTA = (float) a / b    // Resulta em 2.5 pois o valor de a foi considerado float durante o processamento da expressão;
+
+
+# Operadores de atribuição aritmética:
+  * Incremente em uma unidade:          ++
+  * Decremento em uma unidade:          --
+  * Incremento genérico:                +=
+  * Decremento genérico:                -=
+  * Atribuição com multiplicação:       *=
+  * Atribuição com divisão:             /=
+

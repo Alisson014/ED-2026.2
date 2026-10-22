@@ -1,0 +1,55 @@
+
+>> Alocação de memória:
+
+# Funções utilizadas:
+malloc() - alocação inicial da memória
+sizeof() - tamanho em bytes de uma variável ou tipo
+realloc() - realoca uma variável previamente alocada
+free() - libera espaço de memória de uma variável alocada
+
+ -> É preciso utilizar stdlib.h
+
+# malloc(): recebe como parâmetro números inteiros que irão indicar o número de bytes a serem alocados;
+Retorna um ponteiro com o endereço do bloco alocado
+ Função responsável para a alocação dinâmica de memória
+ Ele guarda n+1 espaços da memória, o próprio e os demais dados
+ Inicia os dados com o lixo de memória dos espaços alocados
+
+>>> stdlib.h
+>>> void * malloc(size_t numero_de_bytes) // o void * é porque ele espera um tipo genérico
+>>> (int *) malloc(size_t numero_de_bytes) // também é possível utilizar casting
+>>> int * nome = (itn *) malloc(20 * sizeof(int))
+
+::: saber o tipo dos ponteiros é importante para as operações que podem ser realizadas;
+O ponteiro precisa saber quantas posições precisa pular
+Se for um char, pula uma
+Se for um int, pula sizeof(int)
+
+
+# free()
+Liberação do espaço de memória. Não apaga conteúdo, apenas indica que os espaço da memória
+podem ser utilizados novamente pelo so.
+Recebe como parâmetro apenas o ponteiro do bloco que deve ser liberado
+
+>>> int * dados = (int *) malloc(sizeof(int)*10)
+>>> free(dados);
+>>> dados=NULL; // limpa o conteúdo anterior
+
+
+# realloc()
+Permite aumentar o tamanho de ponteiros já existentes.
+
+>>> int *dados = (int *) malloc(sizeof(int)*10);
+>>> dados = (int *) realloc(dados, 12*sizeof(int));
+
+
+## calloc(quantidade_de_dados, sizeof(tipo))
+Igual ao malloc, mas ele seta todos os dados iniciais como 0;
+O malloc inicializa com os lixos de memória das posições
+
+
+
+:::: Caso não haja memória disponível, malloc e calloc retornam NULL
+:::: É possível aumentar o tamanho do vetor indefinidamente
+
+:::::::::: Nunca esquecer de utilizar o free()

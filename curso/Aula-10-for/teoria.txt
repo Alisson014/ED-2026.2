@@ -1,0 +1,14 @@
+
+>> Estruturas de repetição - comando for;
+
+Também é preciso se preocupar com:
+ - Inicialização;
+ - Condição de para;
+ - Atualização de variáveis;
+
+Contudo, tudo é imbutido no cabeçalho do comando.
+
+# Sintaxe: 
+ for ( <inicializacao> ; <cond> ; <incremento> ){
+    printf("%d ", i);
+ }

@@ -1,0 +1,58 @@
+
+>> Struc:
+
+# Tipos primitivos: float, int, char...
+Tipos para dados simples.
+
+# Tipos estruturados:
+Uma mesma variável que pode armazenar mais de uma informação;
+Muito semelhante à classes (não é a mesma coisa);
+Como um dicionário;
+
+O struct pode modelar um tipo Aluno, por exemplo.
+
+Ele agrupa um conjunto de tipos de dados distintos
+
+* Registro: uma coleção de variáveis, possivelmente de tipos diferentes e logicamente relacionadas;
+  Os elementos de um registro são chamados de campos
+
+>>> Sintaxe
+struct nome_tipo {
+    <tipo> <var>;
+    <tipo2> <var2>;
+    ...
+}
+
+O struct é como um struct / schema
+"Métodos" são definidos fora
+
+:::: o sizeof em um struct soma os tamanhos dos tipos dos campos
+:::: é muito mais eficiente passar um ponteiro para o struc como parâmetro de uma função do que o próprio struct (duplicaria algo de grande tamanho em bytes)
+
+Um struct é um tipo;
+
+
+structs são importantes para deixar o código mais intuitivo
+
+>>> struct ponto {
+    float x;
+    float y;
+}
+
+>>> struct ponto p1;
+>>> p1.x // acessa o campo x de p1
+>>> p1.x = 1.2;
+>>> p1.y = 7.5;
+
+O struct pode ter seus valores atribuídos na inicialização (mesma regra para vetores, só pode na definição/inicialização):
+>>> struct ponto p1 = { 1.2, 7.5 };
+>>> struct ponto p2;
+
+structs podem conter outros structs como campos
+
+# Structs podem receber outros structs do mesmo tipo:
+>>> p2 = p1; /* p2.x = p1.x; p2.y = p2.y */
+
+# Structs não podem ser somados
+
+# Parâmetros em c são passados por valor (cópia) ou referência (endereço/ponteiro)

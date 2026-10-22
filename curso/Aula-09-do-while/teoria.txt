@@ -1,0 +1,14 @@
+
+>> Estruturas de repetição - comando do while;
+
+Similar ao while.
+Porém, executa sempre ao menos uma vez;
+Executa o bloco antes de checar a condição de parada;
+
+# Sintaxe:
+ do {
+    <bloco>
+      ...
+ } while (<cond>);
+
+ 

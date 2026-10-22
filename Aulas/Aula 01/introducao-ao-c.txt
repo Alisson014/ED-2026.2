@@ -1,0 +1,130 @@
+
+Sobre o C;
+
+
+Variáveis e tipos de dados:                 printf
+    - long int                                                          // 4 bytes
+    - int;                                      %d                      // 8 bytes
+    - float;                                    %f                      
+    - double; (float muito grande)              %f
+    - char;                                     %c
+    - char[]; Uma string é um array de char;    %s
+    - size_t; Tamanho de um tipo;               %zu    -> sizeof()
+                                                %
+
+
+Estrutura básica:
+
+#include ...
+
+int main(void) {
+    ...
+    ...
+
+    return 0;
+}
+
+
+# Saída:
+    - printf()
+
+
+# Entrada:
+    - int numero;
+    - scanf("%d", &numero);
+
+
+# Variáveis e memória:
+uma variável ocupa o tamanho referente ao seu tipo na memória;
+Valor é o que está armazenado e endereço é a localização na memória
+    printf("%p" ,   (void *)&var) para imprimir o endereço na memória;
+
+# Operações algébricas: igual python;
+
+
+
+Operador ++:
+ ++x; incrementa primeiro e retorna o valor dempois;
+ x++; retorna o valor primeiro e incrementa depois;
+
+ int x = 5;
+ int resultado = x++;     // resultado == 5 e x == 6
+
+ x = 5
+ resultado = ++x;         // resultado == 6 e x == 6
+
+
+# Estrutura if:
+    if (cond) {
+        ...
+    } else if (cond) {
+        ...
+    } else {
+        ...
+    }
+
+# Estrutura while:
+    while (cond) {
+        ...
+    }
+
+# Estrutura for: 
+    for (int i = 1; i <= 5; i++) {
+        printf("%d\n", i);
+    }
+
+
+# Estrutura do  while
+
+    do {
+        ...        
+    } while (cond);
+
+
+# estrutura switch:
+    switch (opcao) {
+        case 1:
+            ...;
+            break;
+
+        case 2:
+            ...;
+            break;
+
+        default: 
+            ....;
+    }
+
+# Operadores Lógicos:
+    && e
+    || ou
+    !  não;
+
+
+# Funções: 
+ Funções são declaradas fora da função main;
+
+ <tipo> nome(<type> param...) {
+    return;
+ }
+
+ void retornaNada(void);   // sem parâmetro;
+ int retornaInt(int a) {
+    return a;
+ }
+
+ Para dividir em arquivos, dividir em arquivos .h + .c
+ Ex: funcoes.h é repleto pelos cabeçalhos das funções;
+     funcoes.c armazenará os corpos das funções;
+
+ Arquivos .h são importantes pale organização;
+
+# Recursividade:
+ int fatorial(int n) {
+    // caso base
+    if (n == 0){
+        return 1;
+    }
+
+    return n * fatorial(n - 1);
+ }

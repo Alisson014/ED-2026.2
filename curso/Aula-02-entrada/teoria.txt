@@ -1,0 +1,18 @@
+
+>> Entrada de dados;
+
+# Comando scanf():
+  * Sintaxe: scanf(<form.>, &<v1>, ... , &<vn>);
+  * Uso: 1 ou N variáveis;
+  * O & serve para referenciar o endereço da variável na atribuição;
+
+# Especificadores de formato:
+  Identificadores que indicam em que local do texto os dados serão inseridos;
+  %d ou %i      Números inteiros em base decimal
+  %X            Números inteiros em base hexadecimal
+  %f            Números em ponto flutuante
+  %e            Números em notação científica
+  %c            Caracteres alfanuméricos
+  %s            Sequências de caracteres alfanuméricos (strings)
+  [^chars]      Lê todos os dados digitados, exceto os especificados em "chars"; (Exclui caracteres indesejados);
+

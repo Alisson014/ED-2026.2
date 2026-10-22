@@ -1,0 +1,12 @@
+
+>> Indireção múltipla:
+
+Ponteiros de ponteiros, (matrizes)
+
+Primeiro armazena as linhas e depois as colunas.
+
+Para liberar, é preciso liberar a memória alocada em cada linha e depois da própria matriz;
+
+
+# Passagem por referência:
+Passar um ponteiro como parâmetro de uma função

@@ -1,0 +1,17 @@
+
+>> Utilizando ponteiros
+
+ int *xptr; // inicializa um ponteiro (só pode assim, com NULL ou 0);
+ 
+ xptr = &x // atribuindo um endereço ao ponteiro;
+
+ *xptr referencia x;
+ xptr referencia o endereço que está armazenado em xptr
+
+
+# Ponteiro para vetor:
+
+int x[] = {2, 4, 6, 8, 10};
+int *y = x; //acessa o endereço do primeiro elemento;
+
+printf()    *(y + 3) // acessa o elemento de indice 3;

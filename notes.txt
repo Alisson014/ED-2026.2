@@ -1,0 +1,9 @@
+
+# O tamanho de uma variável na memória depende do tipo:
+
+short int - 2 bytes
+int - 4 bytes
+long int - 8 bytes
+char - 1 byte
+float - 4 bytes
+double - 8 bytes

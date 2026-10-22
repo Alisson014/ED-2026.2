@@ -1,0 +1,65 @@
+
+>> Vetores e matrizes:
+
+# Vetor:
+Uma sequencia de elementos do mesmo tipo.
+Os elementos ocupam posições contínuas na memória.0
+Ex: float notas[<length>] // O último índice é length -1
+
+Ex: float notas[9] // Tem tamanho 9 (índice de 0 a 8)
+
+Para percorrer um vetor, basta utilizar uma estrutura de repetição.
+
+
+# Matriz:
+Um vetor de vetores.
+Todos os elementos possuem o mesmo tipo.
+Cada elemento é identificado por [linha][coluna]
+
+float notas[4][3]
+
+matrizes são percorridas por for's encadeados
+for (...){
+    for (...){
+        printf(elemn);
+    }
+    printf("\n");
+}
+
+
+
+# Ponteiros:
+Essenciais para manipular memória
+Sâo utilizados para criar estruturas dinâmicas.
+
+"Uma variável que referencia um endereço na memória"
+
+Um ponteiro é um endereço que aponta para outro endereço.
+Ou seja, ele armazena um endereço e aponta para esse endereço armazenado.
+
+Ponteiros permitem que funções alterem valores de variáveis no escopo global.
+Sendo assim, poupam memória ao evitar criar cópias desnecessárias.
+
+É preciso atenção, mal uso de ponteiros pode causar:
+ - vazamento de memória;
+ - Acesso a espaços indevidos;
+ - Acesso a endereços nulos;
+ - Lixo de memória (não liberar a memória após usar o ponteiro);
+
+Declaração de ponteiros;
+
+::: Cada ponteiro precisa ter seu próprio *: *ponteiro;
+
+int *x, y;
+ - x é um ponteiro para uma variável do tipo inteiro;
+ - y é uma variável interia;
+ - x = &y; // Agora x é um ponteiro que aponta para y;
+
+Podem apontar para qualquer tipo de dados;
+
+:: Na declaração ponteiros só podem ser inicializados com 0, NULL ou um endereço (de uma variável)
+
+Ponteiro pode ser uniciado com:
+ um endereço;
+ NULL
+ ou 0
