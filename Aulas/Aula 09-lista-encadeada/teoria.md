@@ -54,6 +54,7 @@ Isso pode ser feito criando-se uma função:
 Lista* inicializa(void){
     return NULL;
 
+    // Utilizando na main na main:
     // li = incializa();
 }
 ```
@@ -69,8 +70,7 @@ Lista* insercao_vazio(int dado){
     return no;
 
     // Após isso, é preciso fazer a lista vazia (o início), apontar para `no`;
-    // Basta fazer a pista apontar para o `no`
-    // Algo como: li->prox = insercao_vazio(dado);
+    // Algo como: li = insercao_vazio(dado);
 }
 ```
 
@@ -120,11 +120,12 @@ li = no;
 Lista* insercao_inicio(Lista* li, int dado){
     Lista *aux = (Lista*) malloc(sizeof(Lista));
     aux->dado = dado;
-    aux->prox = li;
+    aux->prox = li; // Lembre-se que li aponta para o primeiro elemento
 
     return aux;
 
-    // li = insercao_inicio(li, dado);
+    // Na main:
+    // li = insercao_inicio(li, dado); // Isso faz o li apontar para o novo primeiro.
     // aux é o nó
 }
 ```
